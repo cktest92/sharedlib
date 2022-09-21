@@ -1,5 +1,5 @@
 def gitc() {
   
-  return (git url: 'https://github.com/SPAN-Enterprises/ExpressTaxFilings')
+  return (git clone https://github.com/SPAN-Enterprises/ExpressTaxFilings)
 
 }
