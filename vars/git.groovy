@@ -1,5 +1,8 @@
-def gitc() {
-  
-  return (git clone https://github.com/SPAN-Enterprises/ExpressTaxFilings)
+def call(Map stageParams) {
 
-}
+    checkout([
+        $class: 'GitSCM',
+        branches: [[name:  stageParams.branch ]],
+        userRemoteConfigs: [[ url: stageParams.url ]]
+    ])
+  }
