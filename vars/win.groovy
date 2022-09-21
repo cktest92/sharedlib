@@ -1,3 +1,3 @@
 def list(){
- return bat("appcmd list apppool")
+ bat("appcmd list apppool")
 }
